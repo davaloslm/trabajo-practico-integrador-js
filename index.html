@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container-fluid p-0">
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="">
                     <img src="./img/codoacodo.png" alt="Codo a Codo" height="60">
                     Conf Bs As
@@ -22,7 +23,7 @@
                 </button>
 
                 <!-- Navbar external content -->
-                <div class="navbar-collapse collapse" id="navbarToggleExternalContent">
+                <div class="navbar-collapse collapse justify-content-end me-lg-5" id="navbarToggleExternalContent">
                     <ul class="navbar-nav mb-1">
                         <li><a class="nav-link text-white" href="">La conferencia</a></li>
                         <li><a class="nav-link text-muted" href="">Los oradores</a></li>
@@ -38,8 +39,46 @@
         </nav>
 
         
+        <!-- SLIDER -->
+        <div id="main-slider" class="carousel slide " data-bs-ride="carousel" >
+            <div class="carousel-inner" >
+                
+                <div class="carousel-item active" data-bs-interval="2000" >
+                    <img src="./img/ba1.jpg" class="d-block w-100" alt="Buenos Aires" height="500" style="object-fit: cover ;" >
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/ba2.jpg"  class="d-block w-100"alt="Buenos Aires 2" height="500" style="object-fit: cover ;" >
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/ba3.jpg"  class="d-block w-100"alt="Buenos Aires 3" height="500" style="object-fit: cover ;" >
+                </div>
+                
+                
+                <div class="static-captions position-absolute ">
+                    <h2 class="text-light text-end fw-semibold">
+                        Conf Bs As
+                    </h2>
+                    <p class="text-light text-end d-block fw-semibold">
+                        Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están reando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
+                    </p>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn text-light btn-outline-light">
+                            Quiero ser orador
+                        </button>
+                        <button class="btn btn-success">
+                            Quiero comprar tickets
+                        </button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
