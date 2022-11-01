@@ -1,0 +1,14 @@
+.card-container{
+    margin: 0 auto;
+    max-width: max-content;
+    gap: 5px;
+}
+
+@media(min-width:576px){
+    .card-columns{
+        
+
+        margin: 0 auto;
+
+    }
+}
