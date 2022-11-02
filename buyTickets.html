@@ -43,8 +43,8 @@
 
         <div class="container-fluid m-0 p-0">
             <div class="card-container row justify-content-center">
-                <div class="card-columns col-7 col-sm-3 my-3 p-0">
-                    <div class="card border-primary rounded-0 " style=" aspect-ratio: 1; width: 200px" >
+                <div class="card-columns col-7 col-sm-3 my-3 p-0 d-flex justify-content-center">
+                    <div class="card border-primary rounded-0 " style=" aspect-ratio: 1; width: 190px" >
                         <div class="card-body text-center position-absolute top-50 start-50 translate-middle p-0">
                             <h4 class="card-title fw-semibold">
                                 Estudiante
@@ -66,8 +66,8 @@
             
                     </div>
                 </div>
-                <div class="card-columns col-7 col-sm-3 my-3 p-0">
-                    <div class="card border-success rounded-0" style=" aspect-ratio: 1; width: 200px">
+                <div class="card-columns col-7 col-sm-3 my-3 p-0 d-flex justify-content-center">
+                    <div class="card border-success rounded-0" style=" aspect-ratio: 1; width: 190px">
                         <div class="card-body text-center position-absolute top-50 start-50 translate-middle p-0 align-items-center flex-column d-flex justify-content-evenly">
                             <h4 class="card-title fw-semibold">
                                 Trainee
@@ -89,8 +89,8 @@
             
                     </div>
                 </div>
-                <div class="card-columns col-7 col-sm-3 my-3 p-0">
-                    <div class="card border-warning rounded-0" style=" aspect-ratio: 1; width: 200px">
+                <div class="card-columns col-7 col-sm-3 my-3 p-0 d-flex justify-content-center">
+                    <div class="card border-warning rounded-0" style=" aspect-ratio: 1; width: 190px">
                         <div class="card-body text-center position-absolute top-50 start-50 translate-middle p-0">
                             <h4 class="card-title fw-semibold">
                                 Junior
@@ -115,6 +115,57 @@
             
             </div>
         </div>
+
+        <!-- FORM SECTION -->
+
+        <div class="m-0">
+            <p class="text-center p-0 m-0">VENTA</p>
+            <H2 class="text-center p-0 mb-3 fw-semibold">VALOR DE TICKET $200</H2>
+        </div>
+
+        <form class="form-container" action="">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 mb-3">
+                    <input class="form-control" name="nombre"type="text" placeholder="Nombre">
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <input class="form-control" name="apellido"type="text" placeholder="Apellido">
+                </div>
+                <div class="col-12  mb-3">
+                    <input class="form-control" name="correo"type="text" placeholder="Correo">
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <span>Cantidad</span>
+                    <input class="form-control" name="cantidad"type="text" placeholder="Cantidad">
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <span>Categoría</span>
+                    <select class="form-select">
+                        <option selected hidden>Seleccionar</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                      </select>
+                </div>
+
+                <div class="col-12 my-4">
+                    <div class="total-container">
+                        <p class="p-0 m-0 text-primary">Total a pagar: $ <b id="total"></b> </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                    <button class="btn btn-outline-light w-100 text-light">Borrar</button>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <button class="btn btn-outline-light w-100 text-light">Resumen</button>
+                </div>
+
+
+                
+            </div>
+        </form>
 
 
         <!-- FOOTER -->

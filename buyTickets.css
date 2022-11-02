@@ -4,11 +4,31 @@
     gap: 5px;
 }
 
+.form-container{
+    margin: 0 25px;
+}
+
+.total-container{
+    background-color: #cce5ff;
+    padding: 11px 0 15px 15px;
+    border-radius: .375rem;
+}
+.btn{
+    background-color: #96c93e;
+}
+
+
+
 @media(min-width:576px){
     .card-columns{
-        
+        width: auto;
 
         margin: 0 auto;
 
+    }
+
+    .form-container{
+        margin: 0 auto;
+        width: 580px;
     }
 }
