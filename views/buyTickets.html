@@ -132,31 +132,32 @@
                     <input class="form-control" name="apellido"type="text" placeholder="Apellido">
                 </div>
                 <div class="col-12  mb-3">
-                    <input class="form-control" name="correo"type="text" placeholder="Correo">
+                    <input class="form-control" name="correo"type="email" placeholder="Correo">
                 </div>
 
                 <div class="col-12 col-md-6 ">
                     <span>Cantidad</span>
-                    <input class="form-control" name="cantidad"type="text" placeholder="Cantidad">
+                    <input class="form-control" id="quantity" name="cantidad"type="number" min="0" max="100" placeholder="Cantidad">
                 </div>
                 <div class="col-12 col-md-6 ">
                     <span>Categoría</span>
-                    <select class="form-select">
-                        <option selected hidden>Seleccionar</option>
-                        <option value="estudiante">Estudiante</option>
-                        <option value="trainee">Trainee</option>
-                        <option value="junior">Junior</option>
+                    <select class="form-select" id="category">
+                        <option value="" selected hidden>Seleccionar</option>
+                        <option value="0.8">Estudiante</option>
+                        <option value="0.5">Trainee</option>
+                        <option value="0.15">Junior</option>
                       </select>
                 </div>
 
                 <div class="col-12 my-4">
                     <div class="total-container">
-                        <p class="p-0 m-0 text-primary">Total a pagar: $ <b id="total"></b> </p>
+                        
+                        <p class="p-0 m-0 text-primary">Total a pagar: $<input class="text-primary" id="total" type="text" disabled> </p>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 mb-3">
-                    <button class="btn btn-outline-light w-100 text-light">Borrar</button>
+                    <button type="reset" class="btn btn-outline-light w-100 text-light">Borrar</button>
                 </div>
                 <div class="col-12 col-md-6 mb-3">
                     <button class="btn btn-outline-light w-100 text-light">Resumen</button>
@@ -186,4 +187,5 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+<script src="../js/buyTickets.js"></script>
 </html>
