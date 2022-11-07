@@ -5,7 +5,4 @@ Deberán replicar la siguiente página y enlazarla a la página principal del tr
 
 ![Final_js_front](https://user-images.githubusercontent.com/83665120/200203969-6c560cf6-d6c9-441a-b02d-e2008d1bbce0.png)
 
----
-## Link
-
 
